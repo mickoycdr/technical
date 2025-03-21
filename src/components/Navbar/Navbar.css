@@ -128,3 +128,11 @@ body {
   color: #D4A373 !important;
   transform: scale(0.95);
 }
+
+.navbar-toggler {
+  border-color: #D4A373 !important;
+}
+
+.navbar-toggler-icon {
+  background-color: #D4A373 !important;
+}
