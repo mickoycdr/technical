@@ -1,0 +1,130 @@
+/* Updated Navbar Styling with Raleway Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Navbar Styling */
+.custom-navbar {
+  background: #2C2C2C !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  border-bottom: 2px solid #D4A373;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+  height: 70px;
+  max-width: 200px;
+  margin-right: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #F5E3C3 !important;
+  margin: 0 15px;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* Hover Animation */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #D4A373;
+  bottom: -3px;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #D4A373 !important;
+}
+
+/* CTA Button */
+.cta-button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #800000 !important;
+  border: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #6B705C !important;
+  transform: scale(1.05);
+}
+
+/* Mobile Styles */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 10px 0;
+  }
+
+  .cta-button {
+    margin-top: 10px;
+  }
+
+  .logo {
+    height: 60px;
+    max-width: 180px;
+  }
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #F5E3C3 !important; /* Soft Beige */
+  margin: 0 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #D4A373;
+  bottom: -3px;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #D4A373 !important;
+  transform: scale(0.95);
+}

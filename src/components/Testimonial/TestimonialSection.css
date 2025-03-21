@@ -1,0 +1,81 @@
+.testimonial-section {
+  background: #2C2C2C !important;
+  padding: 80px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Section Title */
+.testimonial-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #D4A373 !important;
+  margin-bottom: 30px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  background: #1E1E1E !important;
+  border-radius: 15px;
+  border: 2px solid #800000;
+  box-shadow: 0px 6px 12px rgba(212, 163, 115, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-7px);
+}
+
+/* Testimonial Image */
+.testimonial-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #D4A373;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+  font-size: 20px;
+  font-style: italic;
+  color: #F5E3C3 !important;
+  margin-bottom: 10px;
+}
+
+/* Client Name */
+.testimonial-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #D4A373 !important;
+}
+
+/* Carousel Controls */
+.testimonial-carousel .carousel-control-prev,
+.testimonial-carousel .carousel-control-next {
+  filter: invert(80%);
+}
+
+.testimonial-carousel .carousel-item {
+  background: transparent !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonial-card {
+      padding: 20px;
+  }
+  
+  .testimonial-text {
+      font-size: 18px;
+  }
+
+  .testimonial-image {
+      width: 75px;
+      height: 75px;
+  }
+}

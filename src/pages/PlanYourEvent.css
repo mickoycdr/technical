@@ -1,0 +1,63 @@
+.event-section {
+  padding: 50px 0;
+  background: #2C2C2C;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #D4A373;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  color: #F5E3C3;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.event-form {
+  background: #F5E3C3;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(107, 112, 92, 0.3);
+  max-width: 800px;
+  margin: auto;
+}
+
+.form-control {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #800000;
+}
+
+.form-control:focus {
+  border-color: #D4A373;
+  box-shadow: 0px 0px 8px rgba(212, 163, 115, 0.5);
+}
+
+.reserve-button {
+  font-size: 18px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  background: #800000;
+  color: #F5E3C3;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.reserve-button:hover {
+  background: #6B0000;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .event-form {
+      padding: 25px;
+  }
+  h2 {
+      font-size: 2rem;
+  }
+}
