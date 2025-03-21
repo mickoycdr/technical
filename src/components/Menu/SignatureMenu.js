@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./SignatureMenu.css";
 import cheese from "../../images/cheese.webp";
 import salmon from "../../images/salmon.jpg";
-import cake from "../../images/fondant.jpg";
+import cake from "../../images/cake.jpg";
 
 const MenuSection = () => {
   const sectionRef = useRef(null);
@@ -45,9 +45,9 @@ const MenuSection = () => {
           <Col lg={6} className="fade-up delay-2">
             <h2 className="menu-title">Appetizers</h2>
             <ul className="menu-list">
-              <li><strong>Truffle-Infused Bruschetta</strong> – Served with aged parmesan.</li>
-              <li><strong>Caviar-Topped Blinis</strong> – Rich, delicate flavors.</li>
-              <li><strong>Gourmet Cheese Platters</strong> – A selection of fine cheeses.</li>
+              <li><strong>Truffle-Infused Bruschetta</strong> – <em>Served with aged parmesan.</em></li>
+              <li><strong>Caviar-Topped Blinis</strong> – <em>Rich, delicate flavors.</em></li>
+              <li><strong>Gourmet Cheese Platters</strong> –<em> A selection of fine cheeses.</em></li>
             </ul>
           </Col>
         </Row>
@@ -60,9 +60,9 @@ const MenuSection = () => {
           <Col lg={6} className="fade-up delay-3">
             <h2 className="menu-title">Main Courses</h2>
             <ul className="menu-list">
-              <li><strong>Slow-Roasted Wagyu Beef</strong> – Served with a side of truffle mashed potatoes.</li>
-              <li><strong>Herb-Crusted Salmon</strong> – Drizzled with lemon butter sauce.</li>
-              <li><strong>Handmade Pasta</strong> – Freshly made with a creamy sauce.</li>
+              <li><strong>Slow-Roasted Wagyu Beef</strong> –<em> Served with a side of truffle mashed potatoes.</em></li>
+              <li><strong>Herb-Crusted Salmon</strong> –<em> Drizzled with lemon butter sauce.</em></li>
+              <li><strong>Handmade Pasta</strong> – <em>Freshly made with a creamy sauce.</em></li>
             </ul>
           </Col>
         </Row>
@@ -75,9 +75,9 @@ const MenuSection = () => {
           <Col lg={6} className="fade-up delay-4">
             <h2 className="menu-title">Desserts</h2>
             <ul className="menu-list">
-              <li><strong>Chocolate Fondant</strong> – Warm, gooey chocolate center.</li>
-              <li><strong>Berry Pavlova</strong> – Light and airy meringue with fresh berries.</li>
-              <li><strong>Crème Brûlée</strong> – Silky smooth with caramelized sugar.</li>
+              <li><strong>Chocolate Fondant</strong> – <em>Warm, gooey chocolate center.</em></li>
+              <li><strong>Berry Pavlova</strong> – <em>Light and airy meringue with fresh berries.</em></li>
+              <li><strong>Crème Brûlée</strong> – <em>Silky smooth with caramelized sugar.</em></li>
             </ul>
           </Col>
         </Row>

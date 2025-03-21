@@ -30,7 +30,7 @@ p {
   font-size: 16px;
   padding: 12px;
   border-radius: 8px;
-  border: 2px solid #800000;
+  border: 2px solid #000000;
 }
 
 .form-control:focus {

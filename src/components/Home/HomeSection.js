@@ -36,7 +36,7 @@ const HomeSection = () => {
 
         {/* First Content Block */}
         <Row className="align-items-center mb-5">
-          <Col lg={7} className={`text-content fade-in ${isVisible ? "visible" : ""}`}>
+          <Col lg={6} className={`text-content fade-in ${isVisible ? "visible" : ""}`}>
             <h1>Exclusive & Luxurious Catering</h1>
             <p>
               PL8FULL sets the standard in luxury catering with personalized dining experiences led by the exceptional Ms. Faye. Serving Hollywood's elite, top global brands, and private clients, we specialize in exquisite cuisine that embodies taste, exclusivity, and culinary excellence.
