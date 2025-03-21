@@ -60,7 +60,7 @@
 }
 
 .menu-list li {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #FFFFFF;
   padding: 12px 0;
   transition: color 0.3s ease;
@@ -95,10 +95,15 @@
   }
 
   .menu-list li {
+    margin-top: 25px;
     font-size: 1.1rem;
   }
   .menu-image img{
-    width: 80%;
+    padding: 25px;
+    width: 100%;
+  }
+  .menu-title{
+    margin-top: 30px;
   }
 }
 
