@@ -3,6 +3,20 @@
   background: #2C2C2C;
 }
 
+.sample2-text h1{
+  font-size: 2rem !important;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  letter-spacing: 15px;
+  font-family: 'Alata', sans-serif !important;
+  text-align: center;
+}
+
+.sample2-text p{
+  text-align: justify;
+}
+
 /* Scroll Animation */
 .fade-in {
   opacity: 0;

@@ -22,3 +22,4 @@ const ServiceCard = ({ title, description }) => {
 };
 
 export default ServiceCard;
+

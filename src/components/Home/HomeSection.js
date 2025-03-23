@@ -35,9 +35,9 @@ const HomeSection = () => {
       <Container>
 
         {/* First Content Block */}
-        <Row className="align-items-center mb-5">
+        <Row className="align-items-center mb-5 sample2-text">
           <Col lg={6} className={`text-content fade-in ${isVisible ? "visible" : ""}`}>
-            <h1>Exclusive & Luxurious Catering</h1>
+            <h1>EXCLUSIVE & LUXURIOUS CATERING</h1>
             <p>
               PL8FULL sets the standard in luxury catering with personalized dining experiences led by the exceptional Ms. Faye. Serving Hollywood's elite, top global brands, and private clients, we specialize in exquisite cuisine that embodies taste, exclusivity, and culinary excellence.
             </p>
@@ -48,13 +48,13 @@ const HomeSection = () => {
         </Row>
 
         {/* Second Content Block */}
-        <Row className="align-items-center">
+        <Row className="align-items-center sample2-text">
           <Col lg={5} className={`image-content fade-in ${isVisible ? "visible" : ""} order-lg-1 order-2`}>
             <img src={HomeImage} alt="Culinary Integrity" className="img-fluid" />
           </Col>
           <Col lg={7} className={`text-content fade-in ${isVisible ? "visible" : ""} order-lg-2 order-1`}>
-            <h1 className="text-center">Culinary Integrity</h1>
-            <p>
+            <h1 className="text-center">CULINARY INTEGRITY</h1>
+            <p className="px-5">
               PL8FULL is committed to upholding the highest culinary standards while honoring our values. We ensure no alcoholic beverages and pork are served or used in our cooking. Each dish features 100% Zabiha Halal-certified meals, guaranteeing authenticity, quality, and integrity.
             </p>
           </Col>

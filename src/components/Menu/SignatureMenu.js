@@ -11,7 +11,7 @@ const MenuSection = () => {
   useEffect(() => {
     const elements = sectionRef.current.querySelectorAll(".fade-up");
     const observer = new IntersectionObserver(
-      (entries, observer) => {
+      (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
@@ -32,52 +32,148 @@ const MenuSection = () => {
   return (
     <section className="menu-section" ref={sectionRef}>
       <Container>
-        <h2 className="quote-text fade-up delay-1">Our Signature Menu</h2>
-        <p className="fade-up delay-1">
-          From delicious hors d'oeuvres to elegant full-course meals, our menus blend global flavors with fresh, local ingredients.
-        </p>
-
-        {/* Appetizers */}
-        <Row className="align-items-center pt-3 fade-up delay-2">
-          <Col lg={6} className="menu-image">
-            <img src={cheese} alt="Appetizers" className="img-fluid rounded" />
+        <Row className="align-items-center fade-up delay-1">
+          {/* LEFT COLUMN: IMAGE */}
+          <Col lg={6} className="menu-image pt-3 my-3">
+            <img
+              src={cheese}
+              alt="Special"
+              className="img-fluid rounded"
+            />
           </Col>
+
+          {/* RIGHT COLUMN: MENU ITEMS */}
           <Col lg={6} className="fade-up delay-2">
-            <h2 className="menu-title">Appetizers</h2>
+            {/* Title */}
+            <h5 className="quote-sample text-start">OUR SIGNATURE MENU</h5>
+            <h2 className="quote-text text-start">APPETIZERS</h2>
+
+            {/* Menu Items */}
             <ul className="menu-list">
-              <li><strong>Truffle-Infused Bruschetta</strong> – <em>Served with aged parmesan.</em></li>
-              <li><strong>Caviar-Topped Blinis</strong> – <em>Rich, delicate flavors.</em></li>
-              <li><strong>Gourmet Cheese Platters</strong> –<em> A selection of fine cheeses.</em></li>
+              {/* 1 */}
+              <li style={{ display: "flex", justifyContent: "space-between" }}>
+                <strong>TRUFFLE-INFUSED BRUSCHETTA</strong>
+                
+              </li>
+              <dl>
+                <em>Served with aged parmesan.</em>
+              </dl>
+
+              {/* 2 */}
+              <li style={{ display: "flex", justifyContent: "space-between" }}>
+                <strong>CAVIAR-TOPPED BLINIS</strong>
+                
+              </li>
+              <dl>
+                <em>Rich, delicate flavors.</em>
+              </dl>
+
+              {/* 3 */}
+              <li style={{ display: "flex", justifyContent: "space-between" }}>
+                <strong>GOURMET CHEESE PLATTERS</strong>
+                
+              </li>
+              <dl>
+                <em>A selection of fine cheeses.</em>
+              </dl>
             </ul>
           </Col>
         </Row>
 
-        {/* Main Courses */}
-        <Row className="align-items-center pt-5 fade-up delay-3">
-          <Col lg={6} className="menu-image order-lg-1 order-2">
-            <img src={salmon} alt="Main Courses" className="img-fluid rounded" />
+        {/* Main Course */}
+        <Row className="align-items-center fade-up delay-1">
+          {/* LEFT COLUMN: IMAGE */}
+          <Col lg={6} className="menu-image order-lg-1 order-2 pt-3 my-3">
+            <img
+              src={salmon}
+              alt="Special"
+              className="img-fluid rounded wagyu-beef"
+            />
           </Col>
-          <Col lg={6} className="fade-up delay-3">
-            <h2 className="menu-title">Main Courses</h2>
+
+          {/* RIGHT COLUMN: MENU ITEMS */}
+          <Col lg={6} className="fade-up delay-2">
+            {/* Title */}
+            <h5 className="quote-sample text-start">OUR SIGNATURE MENU</h5>
+            <h2 className="quote-text text-start">MAIN COURSES</h2>
+
+            {/* Menu Items */}
             <ul className="menu-list">
-              <li><strong>Slow-Roasted Wagyu Beef</strong> –<em> Served with a side of truffle mashed potatoes.</em></li>
-              <li><strong>Herb-Crusted Salmon</strong> –<em> Drizzled with lemon butter sauce.</em></li>
-              <li><strong>Handmade Pasta</strong> – <em>Freshly made with a creamy sauce.</em></li>
+              {/* 1 */}
+              <li style={{ display: "flex", justifyContent: "space-between" }}>
+                <strong>SLOW-ROASTED WAGYU BEEF</strong>
+                
+              </li>
+              <dl>
+                <em>Served with a side of truffle mashed potatoes.</em>
+              </dl>
+
+              {/* 2 */}
+              <li style={{ display: "flex", justifyContent: "space-between" }}>
+                <strong>HERB-CRUSTED SALMON</strong>
+                
+              </li>
+              <dl>
+                <em>Drizzled with lemon butter sauce.</em>
+              </dl>
+
+              {/* 3 */}
+              <li style={{ display: "flex", justifyContent: "space-between" }}>
+                <strong>HANDMADE PASTA</strong>
+                
+              </li>
+              <dl>
+                <em>Freshly made with a creamy sauce.</em>
+              </dl>
             </ul>
           </Col>
         </Row>
 
         {/* Desserts */}
-        <Row className="align-items-center pt-5 fade-up delay-4">
-          <Col lg={6} className="menu-image">
-            <img src={cake} alt="Desserts" className="img-fluid rounded" />
+        <Row className="align-items-center fade-up delay-1">
+          {/* LEFT COLUMN: IMAGE */}
+          <Col lg={6} className="menu-image pt-3 my-3">
+            <img
+              src={cake}
+              alt="Special"
+              className="img-fluid rounded"
+            />
           </Col>
-          <Col lg={6} className="fade-up delay-4">
-            <h2 className="menu-title">Desserts</h2>
+
+          {/* RIGHT COLUMN: MENU ITEMS */}
+          <Col lg={6} className="fade-up delay-2">
+            {/* Title */}
+            <h5 className="quote-sample text-start">OUR SIGNATURE MENU</h5>
+            <h2 className="quote-text text-start">DESSERTS</h2>
+
+            {/* Menu Items */}
             <ul className="menu-list">
-              <li><strong>Chocolate Fondant</strong> – <em>Warm, gooey chocolate center.</em></li>
-              <li><strong>Berry Pavlova</strong> – <em>Light and airy meringue with fresh berries.</em></li>
-              <li><strong>Crème Brûlée</strong> – <em>Silky smooth with caramelized sugar.</em></li>
+              {/* 1 */}
+              <li style={{ display: "flex", justifyContent: "space-between" }}>
+                <strong>CHOCOLATE FONDANT</strong>
+                
+              </li>
+              <dl>
+                <em>Warm, gooey chocolate center.</em>
+              </dl>
+
+              {/* 2 */}
+              <li style={{ display: "flex", justifyContent: "space-between" }}>
+                <strong>BERRY PAVLOVA</strong>
+                
+              </li>
+              <dl>
+                <em>Light and airy meringue with fresh berries.</em>
+              </dl>
+
+              {/* 3 */}
+              <li style={{ display: "flex", justifyContent: "space-between" }}>
+                <strong>CREME BRULEE</strong>
+                
+              </li>
+              <dl>
+                <em>Silky smooth with caramelized sugar.</em>
+              </dl>
             </ul>
           </Col>
         </Row>

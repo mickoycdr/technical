@@ -56,11 +56,32 @@
 /* Carousel Controls */
 .testimonial-carousel .carousel-control-prev,
 .testimonial-carousel .carousel-control-next {
-  filter: invert(80%);
+  width: 30%;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.testimonial-carousel .carousel-item {
-  background: transparent !important;
+.testimonial-carousel .carousel-control-prev-icon,
+.testimonial-carousel .carousel-control-next-icon {
+  background-color: #D4A373;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #800000 !important;
+}
+
+.testimonial-carousel .carousel-control-prev {
+  left: 10px;
+}
+
+.testimonial-carousel .carousel-control-next {
+  right: 10px;
 }
 
 /* Responsive Design */
@@ -76,5 +97,25 @@
   .testimonial-image {
       width: 75px;
       height: 75px;
+  }
+
+  .testimonial-carousel .carousel-control-prev {
+    left: 5px;
+  }
+
+  .testimonial-carousel .carousel-control-next {
+    right: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-control-prev-icon{
+    display: none !important;
+  }
+  .carousel-control-next-icon{
+    display: none !important;
+  }
+  .testimonial-section{
+    padding: 50px;
   }
 }
